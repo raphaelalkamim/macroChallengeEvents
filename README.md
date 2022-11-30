@@ -1,7 +1,5 @@
 # macroChallengeEvents
 Repositório do Macro Challenge 
-# machoChallengeEvents
-Repositório do Macro Challenge 
 ## Authors
  <table>
    <tr>
@@ -20,7 +18,7 @@ Repositório do Macro Challenge
          <img src="https://avatars.githubusercontent.com/u/70045652?v=4" height="auto" width="100" style="corner-radius:50%" alt="Foto de perfil"/<br>
          <sub>
            <br> 
-           Carol Ortega 
+           Carolina Ortega 
            </br>
          </sub>
        </a>
