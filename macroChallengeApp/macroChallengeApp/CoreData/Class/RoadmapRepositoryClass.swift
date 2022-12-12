@@ -241,6 +241,13 @@ public class RoadmapRepository: NSManagedObject {
         context.delete(roadmap)
         self.saveContext()
     }
+    func createBackupRoadmap(roadmapLocal: RoadmapLocal) {
+        guard var newRoadmap = NSEntityDescription.insertNewObject(forEntityName: "RoadmapLocal", into: context) as? RoadmapLocal else { preconditionFailure() }
+        newRoadmap = roadmapLocal
+        let user = UserRepository.shared.getUser()
+        user[0].addToRoadmap(newRoadmap)
+        self.saveContext()
+    }
     func deleteOldRoadmap(roadmap: RoadmapLocal) throws {
         context.delete(roadmap)
         self.saveContext()
